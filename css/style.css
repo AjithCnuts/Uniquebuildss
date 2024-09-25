@@ -585,6 +585,7 @@ i {
     text-align: center;
     background: #262626;
     z-index: 9999;
+    display: none;
 }
 .color-picker a.handle i {
     color: white;
@@ -788,6 +789,7 @@ a.back-to {
     text-align: center;
     width: 40px;
     z-index: 999;
+    padding: 3px;
 }
 /* Skils Progress Bars*/
 
@@ -4234,7 +4236,7 @@ ul.list li::before {
 }
 .bg-black-333 {
     background-color: #333333;
-    padding-top: 35px;
+    padding: 20px 0px;
 }
 .mt-30 {
     margin-top: 30px;
@@ -5017,12 +5019,20 @@ span.input-group-btn button {
 #faq2 .details-heading {
     background: #fff;
     padding: 20px;
-    margin-bottom: 60px;
+    /* margin-bottom: 60px; */
 }
 #faq2 .panel-title > a{
     display: block;
     position:relative;
     padding:7px;
+    line-height: normal;
+    font-weight: 500;
+}
+#faq2 .panel-title > a:hover{
+    color: #fff !important;
+}
+#faq2 .panel-title > a:focus{
+    color: #fff !important;
 }
 #faq2 .panel-title a:before{
     content: "\f068";
@@ -7824,6 +7834,8 @@ a.close-overlay.hidden {
     opacity: 1;
     -webkit-transition: opacity 0.3s;
     transition: opacity 0.3s;
+    height: 250px;
+    object-fit: cover;
 }
 .grid figcaption {
     position: absolute;
@@ -8044,9 +8056,8 @@ a.close-overlay.hidden {
         font-size: 18px;
         s
     }
-    h4,
-    #agent-2 h3 {
-        font-size: 16px;
+    h4, #agent-2 h3 {
+        font-size:16px;
     }
     #header-top,
     #header-bottom a,
@@ -8067,7 +8078,7 @@ a.close-overlay.hidden {
         padding: 10px 0;
     }
     nav.navbar.bootsnav .navbar-brand > img {
-        width: 90px;
+        width: 190px;
     }
     nav.navbar.bootsnav.navbar-sticky .navbar-brand {
         display: inline-block;
